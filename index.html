@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./assets/style.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,33 +19,54 @@
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
           <li>The meta element contains metadata such as character style.</li>
-          <li>Links are addedusing the a element for anchor.</li>
+          <li>URLs are added using the a element for anchor.</li>
+          <li>CSS is added using an external link with 'rel="stylesheet" href="./relative-path-to-css-sheet"'.</li>
+          <li>Classes can be defined to group elements for later group formatting.</li>
         </ul>
       </section>
    
       <section class="card" id="css-section">
         <h2>CSS</h2>
+        <p>selector {property: value}</p>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>Selector '*' applies properties to all elements on page.</li>
+          <li>Multiple selectors can have the same rule e.g. 'header, footer {rule}'.</li>
+          <li>Period preceding selector e.g. '.card' applys rules to all elements of class 'card'.</li>
+          <li>Property 'margin' defines the space around the outside of an element.</li>
+          <li>Property 'padding' adds space around the content onside an element.</li>
+          <li>Property 'display' affects image layout; value 'block' makes each image start on a new line.</li>
+          <li>Property 'color' can be given as a named colour or hexadecimal value.</li>
         </ul>
       </section>
     
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git pull origin branch-name: syncs changes in server</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>git add -A adds all files in working branch</li>
-          <li>git commit -m "message": adds changes to github</li>
-          <li>git push origin branch-name: pushes commited changes to server</li>
+          <li>git status: checks what branch we are currently on.</li>
+          <li>git pull origin branch-name: syncs changes in server.</li>
+          <li>git checkout -b branch-name: creates a new branch and switches to it.</li>
+          <li>git add -A adds all files in working branch.</li>
+          <li>git commit -m "message": adds changes to github.</li>
+          <li>git push origin branch-name: pushes commited changes to server.</li>
         </ul>
       </section>
     
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>Powers tools such as Application Programming Interfaces (APIs) that add functionality to a project.</li>
+          <li>Links to HTML using the 'script' element, just before closing 'body' element.</li>
+          <li>Variables are declared with let e.g. let myVariable;</li>
+          <li>Variable types include strings, numbers, bools, arrays ([]), or just general objects.</li>
+          <li>To select certain objects, as we did with CSS classes, we use 'querySelector("selector-value")', e.g. 'document.querySelector("h1")' to select all h1 elements.</li>
+          <li>Comments are enclosed with /* */ or prefaced by //.</li>
+          <li>Equality tests use ===. Equal/not equal are ! or !==.</li>
+          <li>Built in functions include alert(), multiply(), and querySelector().</li>
+          <li>Event handlers such as 'click' add interactivity by running code in response to an event. The function to run is passed to the function addEventListener 
+            e.g. 'document.querySelector("html").addEventListener("click", function () {
+            alert("Ouch! Stop poking me!"); });' runs this alert after a click.</li>
+          <li>Unnamed functions such as the one above cana lso be assigned using => e.g. 'document.querySelector("html").addEventListener("click", () => {
+            alert("Ouch! Stop poking me!"); });'</li>
         </ul>
       </section>
     </main>
@@ -52,5 +74,8 @@
     <footer>
       <p>I can code!</p>
     </footer>
+
+    <script src="scripts/main.js"></script>
+
   </body>
 </html>
